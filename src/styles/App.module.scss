@@ -1,0 +1,11 @@
+.app {
+  @apply bg-primary w-full overflow-hidden;
+
+  .container {
+    @apply sm:px-16 px-6 flex-center flex-col;
+  }
+
+  .wrapper {
+    @apply xl:max-w-[1280px] w-full;
+  }
+}
