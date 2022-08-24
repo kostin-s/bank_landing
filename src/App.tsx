@@ -1,10 +1,16 @@
+import Introduction from '@/components/sections/Introduction/Introduction';
+import Navbar from '@/components/ui/Navbar/Navbar';
+
 import styles from './styles/App.module.scss';
 
 const App = () => {
   return (
     <div className={styles.app}>
       <div className={styles.container}>
-        <div className={styles.wrapper}></div>
+        <header className={styles.wrapper}>
+          <Navbar />
+        </header>
+        <Introduction />
       </div>
     </div>
   );

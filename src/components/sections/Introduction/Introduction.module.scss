@@ -1,0 +1,95 @@
+.home {
+  @apply w-full mt-[170px] flex pb-[130px] md:flex-row flex-col;
+
+  .content {
+    @apply relative;
+
+    .discount {
+      @apply inline-flex flex-row items-center py-[6px] px-4 rounded-[10px] mb-2 grey-gradient;
+
+      img {
+        @apply w-[32px] h-[32px];
+      }
+
+      .text {
+        @apply ml-2 paragraph uppercase;
+
+        > span {
+          @apply text-white;
+        }
+      }
+    }
+
+    .main_title {
+      @apply text-white text-7xl font-semibold leading-[140%];
+
+      > span {
+        @apply block;
+      }
+    }
+  }
+
+  .text_gradient {
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .descr {
+    @apply mt-6;
+  }
+
+  .cards {
+    @apply h-auto w-[100%] relative z-[5] object-contain;
+    pointer-events: none;
+  }
+
+  .images {
+    @apply flex-1 flex md:my-0 my-10 relative;
+
+    .ball_1,
+    .ball_2,
+    .ball_3 {
+      @apply hidden absolute z-10 md:inline-block;
+    }
+
+    .ball_1 {
+      @apply top-[10px] left-[70px] h-[60px] lg:h-[90px] lg:top-[-30px];
+    }
+
+    .ball_2 {
+      @apply bottom-[170px] right-[-20px] h-[40px] lg:h-[70px] lg:right-[0px];
+    }
+
+    .ball_3 {
+      @apply bottom-[50px] right-[120px] h-[30px] lg:h-[60px] lg:bottom-3 lg:right-[100px];
+    }
+  }
+
+  .gradient_grey {
+    @apply absolute top-[120px] left-[-100px] w-[20%] h-[50%] bg-white;
+    filter: blur(160px);
+  }
+
+  .gradient_pink {
+    @apply absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient;
+  }
+
+  .gradient_white {
+    @apply absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40;
+  }
+
+  .gradient_blue {
+    @apply absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient;
+  }
+}

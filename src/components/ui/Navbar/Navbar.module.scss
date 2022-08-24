@@ -1,0 +1,30 @@
+.wrapper {
+  @apply fixed w-full sm:px-16 px-6 grey-gradient z-[9999];
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.nav {
+  @apply top-0 max-w-[1170px] py-6 flex justify-between items-center mx-auto;
+
+  .logo {
+    @apply flex items-center select-none cursor-pointer;
+
+    > h2 {
+      @apply text-blue-700 text-[18px] font-semibold;
+
+      > span {
+        @apply text-white;
+      }
+    }
+
+    > img {
+      @apply mr-2.5 select-none;
+    }
+  }
+
+  .pc_menu {
+    @apply list-none sm:flex hidden;
+  }
+}

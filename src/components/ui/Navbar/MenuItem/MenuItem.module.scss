@@ -1,0 +1,21 @@
+.link {
+  @apply relative ml-14 first:ml-0 text-[16px] text-white;
+
+  &:after {
+    @apply absolute content-[''] block bg-white h-0.5 w-0 left-[50%];
+
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz--transition: width 0.3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+  }
+
+  &:hover,
+  &.active {
+    &:after {
+      @apply w-full;
+    }
+  }
+}

@@ -25,18 +25,67 @@ module.exports = {
       lg: '1200px',
       xl: '1700px',
     },
+    keyframes: {
+      slide: {
+        '0%': {
+          transform: 'translateY(100px)',
+        },
+        '100%': {
+          transform: 'translateY(0)',
+        },
+      },
+    },
+    animation: {
+      slide: 'slide .35s ease-in-out',
+    },
   },
   plugins: [
-    plugin(({ addComponents, addUtilities }) => {
+    plugin(({ addComponents, theme, addUtilities }) => {
       addComponents({
         '.flex-center': {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         },
+
+        '.paragraph': {
+          fontFamily: theme('fontFamily.poppins'),
+          fontWeight: '400',
+          color: 'rgba(255, 255, 255, 0.7)',
+          fontSize: '18px',
+          lineHeight: '30.8px',
+        },
+
+        '.description': {
+          fontStyle: 'normal',
+          fontWeight: '400',
+          fontSize: '18px',
+          lineHeight: '170%',
+          color: 'rgba(255, 255, 255, 0.7)',
+        },
       });
 
-      addUtilities({});
+      addUtilities({
+        '.grey-gradient': {
+          background: 'linear-gradient(125.17deg, #272727 0%, #11101d 100%)',
+        },
+
+        '.pink__gradient': {
+          background: 'linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%)',
+          filter: 'blur(900px)',
+        },
+
+        '.white__gradient': {
+          background: 'rgba(255, 255, 255, 0.6)',
+          filter: 'blur(750px)',
+        },
+
+        '.blue__gradient': {
+          background:
+            'linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%)',
+          filter: 'blur(123px)',
+        },
+      });
     }),
   ],
 };

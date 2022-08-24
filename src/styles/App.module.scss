@@ -1,8 +1,8 @@
 .app {
-  @apply bg-primary w-full overflow-hidden;
+  @apply bg-[#00040F] w-full overflow-hidden;
 
   .container {
-    @apply sm:px-16 px-6 flex-center flex-col;
+    @apply max-w-[1300px] mx-auto sm:px-16 px-6 flex-center flex-col;
   }
 
   .wrapper {

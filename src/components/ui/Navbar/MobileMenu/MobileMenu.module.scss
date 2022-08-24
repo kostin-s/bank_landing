@@ -1,0 +1,25 @@
+.mobile_menu {
+  @apply relative sm:hidden flex items-center;
+
+  > img {
+    @apply w-[28px] h-[28px] object-contain;
+  }
+
+  .mobile {
+    @apply absolute p-6 mx-4 my-2 min-w-[140px] max-w-[220px] top-20 right-0 rounded-xl animate-slide;
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%
+    );
+
+    li {
+      @apply ml-0 mb-2;
+    }
+
+    .links {
+      @apply flex justify-end items-start flex-1 flex-col list-none;
+    }
+  }
+}
