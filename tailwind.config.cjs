@@ -21,6 +21,7 @@ module.exports = {
       xs: '480px',
       ss: '620px',
       sm: '768px',
+      sd: '950px',
       md: '1060px',
       lg: '1200px',
       xl: '1700px',
@@ -34,9 +35,21 @@ module.exports = {
           transform: 'translateY(0)',
         },
       },
+      move: {
+        '0%': {
+          transform: 'rotate(0deg) translateX(50px) rotate(0deg)',
+        },
+        '50%': {
+          transform: 'rotate(180deg) translateX(50px) rotate(-180deg)',
+        },
+        '100%': {
+          transform: 'rotate(360deg) translateX(50px) rotate(-360deg)',
+        },
+      },
     },
     animation: {
       slide: 'slide .35s ease-in-out',
+      move: 'move 90s linear infinite',
     },
   },
   plugins: [

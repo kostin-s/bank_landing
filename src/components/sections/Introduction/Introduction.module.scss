@@ -1,5 +1,5 @@
 .home {
-  @apply w-full mt-[170px] flex pb-[130px] md:flex-row flex-col;
+  @apply w-full sm:mt-[170px] mt-[120px] flex pb-[50px] lg:pb-[130px] sd:flex-row flex-col;
 
   .content {
     @apply relative;
@@ -21,12 +21,20 @@
     }
 
     .main_title {
-      @apply text-white text-7xl font-semibold leading-[140%];
+      @apply lg:text-7xl lg:mb-10
+        sd:text-6xl 
+        xs:text-5xl 
+        text-4xl mb-5 
+        font-semibold leading-[160%] text-white;
 
       > span {
         @apply block;
       }
     }
+  }
+
+  .descr_width {
+    @apply sd:w-[570px] w-full;
   }
 
   .text_gradient {
@@ -46,7 +54,7 @@
   }
 
   .descr {
-    @apply mt-6;
+    @apply max-w-[570px] w-full mt-6;
   }
 
   .cards {
@@ -55,24 +63,24 @@
   }
 
   .images {
-    @apply flex-1 flex md:my-0 my-10 relative;
+    @apply min-w-[300px] max-w-[650px] flex-1 flex md:my-0 my-10 relative m-[30px_auto_0];
 
     .ball_1,
     .ball_2,
     .ball_3 {
-      @apply hidden absolute z-10 md:inline-block;
+      @apply hidden absolute z-10 sd:inline-block;
     }
 
     .ball_1 {
-      @apply top-[10px] left-[70px] h-[60px] lg:h-[90px] lg:top-[-30px];
+      @apply top-[10px] left-[70px] h-[60px] lg:h-[90px] lg:top-[-30px] animate-move;
     }
 
     .ball_2 {
-      @apply bottom-[170px] right-[-20px] h-[40px] lg:h-[70px] lg:right-[0px];
+      @apply bottom-[170px] right-[-20px] h-[40px] lg:h-[70px] lg:right-[0px] animate-[move_40s_linear_infinite];
     }
 
     .ball_3 {
-      @apply bottom-[50px] right-[120px] h-[30px] lg:h-[60px] lg:bottom-3 lg:right-[100px];
+      @apply bottom-[50px] right-[120px] h-[30px] lg:h-[60px] lg:bottom-3 lg:right-[100px] animate-[move_30s_linear_infinite];
     }
   }
 
