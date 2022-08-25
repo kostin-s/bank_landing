@@ -1,0 +1,33 @@
+.statistic {
+  @apply flex flex-row flex-wrap justify-center lg:justify-between sm:mb-20 mb-6;
+
+  .data {
+    @apply grow-[1] lg:flex-[0_0_330px] flex justify-between ss:justify-center items-center flex-row m-3;
+  }
+
+  .value {
+    @apply font-poppins font-semibold 
+      xs:text-[40.89px] text-[25.89px] 
+      xs:leading-[53.16px] leading-[43.16px] text-white;
+  }
+
+  .title {
+    @apply font-poppins font-normal 
+      xs:text-[20.45px] text-[15.45px] 
+      xs:leading-[26.58px] leading-[21.58px] 
+      uppercase ml-3 text-right sm:text-center;
+    background: radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}

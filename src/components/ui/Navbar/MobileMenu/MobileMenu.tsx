@@ -21,8 +21,6 @@ const MobileMenu: FC<IMobileMenuProps> = props => {
 
   const { isShow, setIsShow, ref } = useOutside(false);
 
-  console.log('render');
-
   return (
     <div className={styles.mobile_menu} ref={ref}>
       <img
