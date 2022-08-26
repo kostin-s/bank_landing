@@ -1,4 +1,4 @@
-import { Dispatch, FC, SetStateAction } from 'react';
+import { FC } from 'react';
 
 import Button from '@/components/ui/Button/Button';
 import Description from '@/components/ui/Description/Description';

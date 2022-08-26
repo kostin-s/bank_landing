@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import { IFeature } from '../business.interface';
 
@@ -24,27 +25,34 @@ const FeatureItem: FC<IFeatureItem> = ({
 
   return (
     <li className={styles.li}>
-      <button
-        className={cn(styles.box, {
-          [styles.active]: isActive,
-        })}
-        onClick={() => setActive(Number(id) || 0)}
-        disabled={disabled || isActive}
+      <ScrollAnimation
+        animateIn='bounceInRight'
+        duration={1}
+        delay={Number(`${id}00`)}
+        animateOnce={true}
       >
-        <div className={styles.content}>
-          <div
-            className={cn(styles.icon, {
-              [styles[`feature_${id}`]]: id,
-            })}
-          >
-            <img src={icon} alt='icon' />
+        <button
+          className={cn(styles.box, {
+            [styles.active]: isActive,
+          })}
+          onClick={() => setActive(Number(id) || 0)}
+          disabled={disabled || isActive}
+        >
+          <div className={styles.content}>
+            <div
+              className={cn(styles.icon, {
+                [styles[`feature_${id}`]]: id,
+              })}
+            >
+              <img src={icon} alt='icon' />
+            </div>
+            <div className={styles.info}>
+              <h4>{title}</h4>
+              <p>{content}</p>
+            </div>
           </div>
-          <div className={styles.info}>
-            <h4>{title}</h4>
-            <p>{content}</p>
-          </div>
-        </div>
-      </button>
+        </button>
+      </ScrollAnimation>
     </li>
   );
 };

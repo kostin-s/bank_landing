@@ -4,7 +4,7 @@
     mt-[-110px] pt-[110px];
 
   .content {
-    @apply flex flex-col pr-5 lg:justify-start justify-center;
+    @apply flex flex-col lg:justify-start justify-center sm:pr-5 pr-0;
   }
 
   .title_width {
