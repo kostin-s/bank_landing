@@ -1,8 +1,12 @@
 export interface IBusinessData {
+  items: IItem[];
+  features: IFeature[];
+}
+
+export interface IItem {
   title: string;
   descr: string;
   button: string;
-  features: IFeature[];
 }
 
 export interface IFeature {
