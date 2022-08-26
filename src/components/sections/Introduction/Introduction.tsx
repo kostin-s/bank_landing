@@ -5,6 +5,7 @@ import Description from '@/components/ui/Description/Description';
 import { ball, cards, discount } from '@/shared/images';
 
 import styles from './Introduction.module.scss';
+import { introduction as data } from './introduction.data';
 
 const Introduction: FC = () => {
   return (
@@ -15,20 +16,20 @@ const Introduction: FC = () => {
         <div className={styles.discount}>
           <img src={discount} alt='discount' />
           <p className={styles.text}>
-            <span>20%</span> скидка на <span>1 месяц</span> нового счета
+            <span>{data.discount.part_1}</span>
+            {data.discount.part_2}
+            <span>{data.discount.part_3}</span>
+            {data.discount.part_3}
           </p>
         </div>
 
         <h1 className={styles.main_title}>
-          Способ Оплаты<span className={styles.text_gradient}>Следующего</span>
-          Поколения
+          {data.title.begin}
+          <span className={styles.text_gradient}>{data.title.middle}</span>
+          {data.title.end}
         </h1>
 
-        <Description style={styles.descr_width}>
-          Наша команда экспертов подберет для вас лучшие условия по оформлению
-          кредитной карты. Мы постоянно изучаем рынок, чтобы подобрать для вас
-          самые лучшие предложения.
-        </Description>
+        <Description style={styles.descr_width}>{data.descr}</Description>
       </div>
       <div className={styles.images}>
         <img className={styles.cards} src={cards} alt='cards' />

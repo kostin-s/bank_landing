@@ -2,6 +2,7 @@ import Introduction from '@/components/sections/Introduction/Introduction';
 import Statistics from '@/components/sections/Statistics/Statistics';
 import Navbar from '@/components/ui/Navbar/Navbar';
 
+import Business from './components/sections/Business/Business';
 import styles from './styles/App.module.scss';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         </header>
         <Introduction />
         <Statistics />
+        <Business />
       </div>
     </div>
   );

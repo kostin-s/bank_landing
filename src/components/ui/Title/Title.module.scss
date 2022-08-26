@@ -1,0 +1,8 @@
+.title {
+  @apply font-poppins not-italic font-semibold 
+  w-full
+  leading-[160%] 
+  lg:text-5xl text-3xl
+  tracking-[0.01em]
+  text-white;
+}

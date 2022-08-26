@@ -1,0 +1,15 @@
+.business {
+  @apply flex;
+
+  .content {
+    @apply flex flex-col;
+  }
+
+  .title_width {
+    @apply max-w-[620px];
+  }
+
+  .descr_width {
+    @apply max-w-[570px];
+  }
+}

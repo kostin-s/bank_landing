@@ -1,4 +1,6 @@
-export const statistics = [
+import { IStatisticsData } from './statistics.interface';
+
+export const statistics: IStatisticsData[] = [
   {
     id: 'statistics-1',
     title: 'Активных пользователей',
