@@ -1,18 +1,25 @@
 .home {
-  @apply w-full sm:mt-[170px] mt-[120px] flex pb-[50px] lg:pb-[130px] sd:flex-row flex-col;
+  @apply w-full flex 
+    sd:flex-row flex-col
+    lg:pb-[130px] sd:pb-[50px] pb-0 
+    sm:mt-[100px] mt-[30px]
+    sm:pt-[30px] pt-[90px];
 
   .content {
     @apply relative;
 
     .discount {
-      @apply inline-flex flex-row items-center py-[6px] px-4 rounded-[10px] mb-2 grey-gradient;
+      @apply inline-flex flex-row items-center 
+        py-[6px] px-4 rounded-[10px] mb-2 grey-gradient;
 
-      img {
-        @apply w-[32px] h-[32px];
+      > img {
+        @apply w-[32px] h-[32px] 
+          hidden xs:inline-block;
       }
 
       .text {
-        @apply ml-2 paragraph uppercase;
+        @apply ml-2 paragraph uppercase 
+          sm:text-[18px] text-[12px];
 
         > span {
           @apply text-white;
@@ -21,10 +28,10 @@
     }
 
     .main_title {
-      @apply lg:text-7xl lg:mb-10
+      @apply lg:text-7xl lg:my-10
         sd:text-6xl 
         xs:text-5xl 
-        text-4xl mb-5 
+        text-4xl my-5 
         font-semibold leading-[160%] text-white;
 
       > span {
@@ -34,7 +41,7 @@
   }
 
   .descr_width {
-    @apply sd:w-[570px] w-full;
+    @apply sd:w-[570px] w-full sm:text-[18px] text-[14px];
   }
 
   .text_gradient {
@@ -63,7 +70,9 @@
   }
 
   .images {
-    @apply min-w-[300px] max-w-[650px] flex-1 flex md:my-0 my-10 relative m-[30px_auto_0];
+    @apply flex-1 flex max-w-[650px] relative m-[30px_auto_0]
+      min-w-[220px] xs:min-w-[300px] 
+      md:my-0 my-10;
 
     .ball_1,
     .ball_2,
@@ -72,15 +81,23 @@
     }
 
     .ball_1 {
-      @apply top-[10px] left-[70px] h-[60px] lg:h-[90px] lg:top-[-30px] animate-move;
+      @apply top-[-35px] left-[40px] h-[60px]
+        md:top-[10px] md:left-[70px] 
+        lg:h-[90px] lg:top-[-30px]
+        animate-move;
     }
 
     .ball_2 {
-      @apply bottom-[170px] right-[-20px] h-[40px] lg:h-[70px] lg:right-[0px] animate-[move_40s_linear_infinite];
+      @apply bottom-[170px] right-[-20px] h-[40px] 
+        lg:h-[70px] lg:right-[0px] 
+        animate-[move_40s_linear_infinite];
     }
 
     .ball_3 {
-      @apply bottom-[50px] right-[120px] h-[30px] lg:h-[60px] lg:bottom-3 lg:right-[100px] animate-[move_30s_linear_infinite];
+      @apply bottom-[10px] right-[100px] h-[30px]
+        md:bottom-[20px] md:right-[120px] 
+        lg:h-[60px] lg:bottom-3 lg:right-[100px] 
+        animate-[move_30s_linear_infinite];
     }
   }
 

@@ -15,7 +15,7 @@ const Introduction: FC = () => {
         <div className={styles.discount}>
           <img src={discount} alt='discount' />
           <p className={styles.text}>
-            <span>20%</span> скидка на <span>1 месяц</span> нового счета
+            <span>20%</span> скидка на <span>1 месяц</span> нового счета
           </p>
         </div>
 

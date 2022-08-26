@@ -37,13 +37,13 @@ module.exports = {
       },
       move: {
         '0%': {
-          transform: 'rotate(0deg) translateX(50px) rotate(0deg)',
+          transform: 'rotate(0deg) translateX(10px) rotate(0deg)',
         },
         '50%': {
-          transform: 'rotate(180deg) translateX(50px) rotate(-180deg)',
+          transform: 'rotate(180deg) translateX(10px) rotate(-180deg)',
         },
         '100%': {
-          transform: 'rotate(360deg) translateX(50px) rotate(-360deg)',
+          transform: 'rotate(360deg) translateX(10px) rotate(-360deg)',
         },
       },
     },
