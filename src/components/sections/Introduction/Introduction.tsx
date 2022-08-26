@@ -19,7 +19,7 @@ const Introduction: FC = () => {
             <span>{data.discount.part_1}</span>
             {data.discount.part_2}
             <span>{data.discount.part_3}</span>
-            {data.discount.part_3}
+            {data.discount.part_4}
           </p>
         </div>
 

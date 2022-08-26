@@ -1,5 +1,5 @@
 .button {
-  @apply w-fit px-[33px] py-[19px] rounded-[10px] text-black-700 
+  @apply xs:w-fit w-full px-[33px] py-[19px] rounded-[10px] text-black-700 
     capitalize text-lg leading-[150%] cursor-pointer select-none;
   background: linear-gradient(
     157.81deg,

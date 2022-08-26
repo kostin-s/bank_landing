@@ -1,15 +1,21 @@
 .business {
-  @apply flex;
+  @apply flex w-full justify-between mb-[160px]
+    sm:flex-row flex-col-reverse
+    mt-[-110px] pt-[110px];
 
   .content {
-    @apply flex flex-col;
+    @apply flex flex-col pr-5 lg:justify-start justify-center;
   }
 
   .title_width {
-    @apply max-w-[620px];
+    @apply sm:max-w-[620px] max-w-full;
   }
 
   .descr_width {
-    @apply max-w-[570px];
+    @apply sm:max-w-[570px] max-w-full mt-[24px] mb-[48px];
+  }
+
+  .list {
+    @apply sm:mb-0 mb-5;
   }
 }

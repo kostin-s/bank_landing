@@ -12,7 +12,7 @@ const Business: FC = () => {
   const { title, descr, button, features } = data;
 
   return (
-    <section className={styles.business}>
+    <section className={styles.business} id='features'>
       <div className={styles.content}>
         <Title style={styles.title_width}>{title}</Title>
         <Description style={styles.descr_width}>{descr}</Description>
@@ -21,7 +21,7 @@ const Business: FC = () => {
 
       <ul className={styles.list}>
         {features.map(feature => (
-          <FeatureItem feature={feature} />
+          <FeatureItem feature={feature} key={feature.id} />
         ))}
       </ul>
     </section>
