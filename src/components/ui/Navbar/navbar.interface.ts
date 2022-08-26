@@ -3,4 +3,4 @@ export interface INavbar {
   id: ILinks;
 }
 
-export type ILinks = 'home' | 'features' | 'about' | 'solution';
+export type ILinks = 'home' | 'features' | 'about' | 'benefit';

@@ -15,6 +15,6 @@ export const menuLinks: INavbar[] = [
   },
   {
     title: 'Предложения',
-    id: 'solution',
+    id: 'benefit',
   },
 ];

@@ -66,8 +66,7 @@
   }
 
   .cards {
-    @apply h-auto w-[100%] relative z-[5] object-contain;
-    pointer-events: none;
+    @apply h-auto w-[100%] relative z-[5] object-contain pointer-events-none;
   }
 
   .images {

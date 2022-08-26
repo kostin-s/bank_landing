@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const useSlider = () => {
-  const [currentIdx, setCurrentIdx] = useState<number>(1);
+  const [currentIdx, setCurrentIdx] = useState<number>(0);
   const [slideIn, setSlideIn] = useState<boolean>(true);
   const [isDisabled, setIsDisabled] = useState<boolean>(false);
 
