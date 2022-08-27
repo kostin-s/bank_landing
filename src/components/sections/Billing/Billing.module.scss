@@ -1,6 +1,6 @@
 .billing {
   @apply flex flex-col-reverse sm:flex-row items-center mb-[80px]
-    mt-[-110px] pt-[110px];
+    mt-[-110px] pt-[80px] sm:pt-[110px];
 
   .image {
     @apply relative max-w-[510px] flex-1 flex-center md:mr-10 mr-0 md:mt-0 mt-10;

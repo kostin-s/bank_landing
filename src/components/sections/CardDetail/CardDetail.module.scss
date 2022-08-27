@@ -1,6 +1,6 @@
 .detail {
   @apply flex flex-col sm:flex-row items-center mb-[80px]
-    mt-[-110px] pt-[110px];
+    mt-[-110px] pt-[80px] sm:pt-[110px];
 
   .image {
     @apply relative max-w-[520px] flex-1 flex-center md:ml-10 ml-0 md:mt-0 mt-10;
