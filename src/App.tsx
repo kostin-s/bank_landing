@@ -1,5 +1,6 @@
 import Billing from '@/components/sections/Billing/Billing';
 import Business from '@/components/sections/Business/Business';
+import CardDetail from '@/components/sections/CardDetail/CardDetail';
 import Introduction from '@/components/sections/Introduction/Introduction';
 import Statistics from '@/components/sections/Statistics/Statistics';
 import Navbar from '@/components/ui/Navbar/Navbar';
@@ -17,6 +18,7 @@ const App = () => {
         <Statistics />
         <Business />
         <Billing />
+        <CardDetail />
       </div>
     </div>
   );

@@ -1,0 +1,29 @@
+.detail {
+  @apply flex flex-col sm:flex-row items-center mb-[80px]
+    mt-[-110px] pt-[110px];
+
+  .image {
+    @apply relative max-w-[520px] flex-1 flex-center md:ml-10 ml-0 md:mt-0 mt-10;
+    > img {
+      @apply w-[100%] h-[100%] 
+        px-5 sm:p-0
+        pointer-events-none select-none;
+    }
+  }
+
+  .content {
+    @apply flex-1 sm:mr-5 mr-0;
+
+    .title_width {
+      @apply sm:max-w-[570px] w-full;
+    }
+
+    .descr_width {
+      @apply sm:max-w-[500px] w-full;
+    }
+
+    .descr_width {
+      @apply mt-[24px] mb-[48px];
+    }
+  }
+}

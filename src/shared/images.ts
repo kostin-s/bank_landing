@@ -1,6 +1,7 @@
 import appleStoreIcon from '@/assets/appleStore.svg';
 import ball from '@/assets/ball.png';
 import billing from '@/assets/billing.png';
+import cardDetail from '@/assets/cardDetail.png';
 import cards from '@/assets/cards.png';
 import close from '@/assets/close.svg';
 import discount from '@/assets/discount.svg';
@@ -24,4 +25,5 @@ export {
   billing,
   appleStoreIcon,
   googlePlayIcon,
+  cardDetail,
 };
