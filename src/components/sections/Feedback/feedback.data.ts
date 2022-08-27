@@ -4,6 +4,7 @@ import { IFeedbackItemData } from './feedback.interface';
 
 export const feedbackData: IFeedbackItemData[] = [
   {
+    id: 1,
     content:
       'Деньги - это инструмент. Главное правильно им пользоваться. Мобильное приложение банка очень в этом помогает. Все данные о финансах в удобном формате.',
     human: {
@@ -13,6 +14,7 @@ export const feedbackData: IFeedbackItemData[] = [
     },
   },
   {
+    id: 2,
     content:
       'Использование финансов в банке нового поколения значительно упростило мою жизнь. Всё удобно и доступно.',
     human: {
@@ -22,6 +24,7 @@ export const feedbackData: IFeedbackItemData[] = [
     },
   },
   {
+    id: 3,
     content:
       'С банком нового поколения у меня получилось в кратчайшие сроки улучшить своё финансовое положение.',
     human: {

@@ -1,9 +1,11 @@
 .item {
   @apply relative flex flex-1 flex-col 
-    pt-[128px] pb-[60px] px-[40px]
+    md:pt-[128px] sm:pt-[110px] pt-[30px] md:pb-[60px] pb-[30px] md:px-[40px] px-[25px]
     sm:max-w-[370px] w-full
     sm:h-[400px] h-full
-    mr-[30px] last:mr-0;
+    sm:mb-0 mb-7 mr-0
+    sm:mr-[30px] last:mr-0
+    overflow-hidden;
 
   &:before {
     @apply absolute content-[''] inset-0 z-[1] opacity-[1] rounded-[20px];
@@ -23,7 +25,11 @@
   }
 
   .quotes {
-    @apply absolute top-[60px] z-10;
+    @apply absolute xs:block hidden 
+      sm:top-[60px] top-auto
+      md:left-[40px] sm:left-[25px] left-auto
+      sm:right-auto right-[20px] 
+      sm:bottom-auto bottom-[45px] z-10;
   }
 
   .content {
@@ -40,10 +46,10 @@
     }
 
     .human {
-      @apply flex items-center;
+      @apply flex items-center flex-row sm:flex-col md:flex-row sm:mt-0 mt-2;
 
       > img {
-        @apply w-[48px] h-[48px] object-contain mr-4;
+        @apply w-[48px] h-[48px] object-contain md:mr-4 sm:mr-0 mr-4 md:mb-0 sm:mb-3 mb-0;
       }
 
       .about {
@@ -51,11 +57,11 @@
       }
 
       .name {
-        @apply w-full leading-[32px] text-[20px];
+        @apply w-full leading-[32px] lg:text-[20px] text-[14px] whitespace-nowrap;
       }
 
       .info {
-        @apply w-full leading-[24px] opacity-50 text-[16px];
+        @apply w-full leading-[24px] opacity-50 lg:text-[16px] text-[12px] whitespace-nowrap;
       }
     }
   }

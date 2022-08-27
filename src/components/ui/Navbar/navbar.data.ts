@@ -10,11 +10,11 @@ export const menuLinks: INavbar[] = [
     id: 'features',
   },
   {
-    title: 'О нас',
-    id: 'about',
-  },
-  {
     title: 'Предложения',
     id: 'benefit',
+  },
+  {
+    title: 'О нас',
+    id: 'about',
   },
 ];

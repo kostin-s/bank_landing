@@ -7,8 +7,10 @@ import { feedbackData } from './feedback.data';
 const Feedback: FC = () => {
   return (
     <section className={styles.feedback}>
+      <div className={styles.gradient_blue} />
+
       {feedbackData.map(item => (
-        <FeedbackItem data={item} />
+        <FeedbackItem data={item} key={item.id} />
       ))}
     </section>
   );
