@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Description from '@/components/ui/Description/Description';
 
@@ -13,30 +14,35 @@ const Introduction: FC = () => {
       <div className={styles.content}>
         <div className={styles.gradient_grey} />
 
-        <div className={styles.discount}>
-          <img src={discount} alt='discount' />
-          <p className={styles.text}>
-            <span>{data.discount.part_1}</span>
-            {data.discount.part_2}
-            <span>{data.discount.part_3}</span>
-            {data.discount.part_4}
-          </p>
-        </div>
+        <ScrollAnimation animateIn='fadeIn' duration={1} animateOnce={true}>
+          <div className={styles.discount}>
+            <img src={discount} alt='discount' />
+            <p className={styles.text}>
+              <span>{data.discount.part_1}</span>
+              {data.discount.part_2}
+              <span>{data.discount.part_3}</span>
+              {data.discount.part_4}
+            </p>
+          </div>
 
-        <h1 className={styles.main_title}>
-          {data.title.begin}
-          <span className={styles.text_gradient}>{data.title.middle}</span>
-          {data.title.end}
-        </h1>
+          <h1 className={styles.main_title}>
+            {data.title.begin}
+            <span className={styles.text_gradient}>{data.title.middle}</span>
+            {data.title.end}
+          </h1>
 
-        <Description style={styles.descr_width}>{data.descr}</Description>
+          <Description style={styles.descr_width}>{data.descr}</Description>
+        </ScrollAnimation>
       </div>
-      <div className={styles.images}>
-        <img className={styles.cards} src={cards} alt='cards' />
 
-        <img className={styles.ball_1} src={ball} alt='ball-1' />
-        <img className={styles.ball_2} src={ball} alt='ball-2' />
-        <img className={styles.ball_3} src={ball} alt='ball-3' />
+      <div className={styles.images}>
+        <ScrollAnimation animateIn='fadeIn' duration={1} animateOnce={true}>
+          <img className={styles.cards} src={cards} alt='cards' />
+
+          <img className={styles.ball_1} src={ball} alt='ball-1' />
+          <img className={styles.ball_2} src={ball} alt='ball-2' />
+          <img className={styles.ball_3} src={ball} alt='ball-3' />
+        </ScrollAnimation>
 
         <div className={styles.gradient_pink} />
         <div className={styles.gradient_white} />

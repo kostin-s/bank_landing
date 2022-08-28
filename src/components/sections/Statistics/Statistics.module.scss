@@ -1,5 +1,7 @@
 .statistic {
-  @apply flex flex-row flex-wrap justify-center lg:justify-between sm:mb-20 mb-6;
+  > div {
+    @apply flex flex-row flex-wrap justify-center lg:justify-between sm:mb-20 mb-6;
+  }
 
   .data {
     @apply grow-[1] lg:flex-[0_0_330px] flex justify-between ss:justify-center items-center flex-row m-3;
