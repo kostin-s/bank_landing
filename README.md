@@ -1,6 +1,6 @@
-# Сайт Банка Будущего (Лендинг)
+# Сайт Банка Будущего
 
-Одностраничный сайт для демонстрации основных предложений от нового банка будущего.
+### Одностраничный сайт для демонстрации основных предложений от нового банка будущего.
 
 ### Стек технологий:
 
@@ -15,7 +15,3 @@
 ---
 
 ![photo_2](https://github.com/kostin-s/bank_landing/blob/master/src/assets/preview/preview_2.PNG)
-
----
-
-![photo_3](https://github.com/kostin-s/bank_landing/blob/master/src/assets/preview/preview_3.PNG)
