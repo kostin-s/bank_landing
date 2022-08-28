@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Description from '@/components/ui/Description/Description';
 import Title from '@/components/ui/Title/Title';
@@ -14,26 +15,44 @@ const Billing: FC = () => {
   return (
     <section className={styles.billing} id='benefit'>
       <div className={styles.image}>
-        <img src={billing} alt='billing' />
+        <ScrollAnimation animateIn='zoomIn' duration={1} animateOnce={true}>
+          <img className={styles.billing_img} src={billing} alt='billing' />
+        </ScrollAnimation>
 
         <div className={styles.gradient_white} />
         <div className={styles.gradient_pink} />
       </div>
 
       <div className={styles.content}>
-        <Title style={styles.title_width}>{title}</Title>
-        <Description style={styles.descr_width}>{description}</Description>
+        <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true}>
+          <Title style={styles.title_width}>{title}</Title>
+          <Description style={styles.descr_width}>{description}</Description>
+        </ScrollAnimation>
+
         <div className={styles.buttons}>
-          <img
-            className={styles.apple}
-            src={appleStoreIcon}
-            alt='apple_store'
-          />
-          <img
-            className={styles.market}
-            src={googlePlayIcon}
-            alt='google_play'
-          />
+          <ScrollAnimation
+            animateIn='bounceInRight'
+            duration={1}
+            animateOnce={true}
+          >
+            <img
+              className={styles.apple}
+              src={appleStoreIcon}
+              alt='apple_store'
+            />
+          </ScrollAnimation>
+          <ScrollAnimation
+            animateIn='bounceInRight'
+            duration={1}
+            delay={500}
+            animateOnce={true}
+          >
+            <img
+              className={styles.market}
+              src={googlePlayIcon}
+              alt='google_play'
+            />
+          </ScrollAnimation>
         </div>
       </div>
     </section>

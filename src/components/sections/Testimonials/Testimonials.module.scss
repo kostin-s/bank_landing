@@ -1,7 +1,11 @@
 .testimonials {
-  @apply flex flex-col justify-between mb-[80px]
-  mt-[-110px] pt-[80px] sm:pt-[110px]
-  ss:flex-row;
+  @apply mt-[-110px] pt-[110px];
+
+  .wrapper {
+    @apply flex flex-col justify-between mb-[80px]
+      mt-[-110px] pt-[80px] sm:pt-[110px]
+      ss:flex-row;
+  }
 
   .title_width {
     @apply flex-1;

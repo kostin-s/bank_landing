@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Button from '@/components/ui/Button/Button';
 import Description from '@/components/ui/Description/Description';
@@ -11,15 +12,22 @@ const Banner: FC = () => {
   const { title, description, button } = bannerData;
 
   return (
-    <section className={styles.banner}>
-      <div className={styles.content}>
-        <Title style={styles.title}>{title}</Title>
-        <Description style={styles.description}>{description}</Description>
-      </div>
+    <section>
+      <ScrollAnimation
+        className={styles.banner}
+        animateIn='fadeInUp'
+        duration={1}
+        animateOnce={true}
+      >
+        <div className={styles.content}>
+          <Title style={styles.title}>{title}</Title>
+          <Description style={styles.description}>{description}</Description>
+        </div>
 
-      <div className={styles.button}>
-        <Button>{button}</Button>
-      </div>
+        <div className={styles.button}>
+          <Button>{button}</Button>
+        </div>
+      </ScrollAnimation>
     </section>
   );
 };

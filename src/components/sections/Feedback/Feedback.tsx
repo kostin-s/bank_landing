@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import styles from './Feedback.module.scss';
 import FeedbackItem from './FeedbackItem/FeedbackItem';
@@ -10,7 +11,15 @@ const Feedback: FC = () => {
       <div className={styles.gradient_blue} />
 
       {feedbackData.map(item => (
-        <FeedbackItem data={item} key={item.id} />
+        <ScrollAnimation
+          className={styles.content}
+          animateIn='rollIn'
+          duration={1}
+          animateOnce={true}
+          key={item.id}
+        >
+          <FeedbackItem data={item} />
+        </ScrollAnimation>
       ))}
     </section>
   );

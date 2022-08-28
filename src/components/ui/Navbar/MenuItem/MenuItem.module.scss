@@ -18,4 +18,8 @@
       @apply w-full;
     }
   }
+
+  &.disabled {
+    @apply pointer-events-none select-none;
+  }
 }

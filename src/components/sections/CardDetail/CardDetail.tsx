@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Button from '@/components/ui/Button/Button';
 import Description from '@/components/ui/Description/Description';
@@ -15,12 +16,16 @@ const CardDetail: FC = () => {
   return (
     <section className={styles.detail}>
       <div className={styles.content}>
-        <Title style={styles.title_width}>{title}</Title>
-        <Description style={styles.descr_width}>{description}</Description>
-        <Button>{button}</Button>
+        <ScrollAnimation animateIn='fadeInUp' duration={1} animateOnce={true}>
+          <Title style={styles.title_width}>{title}</Title>
+          <Description style={styles.descr_width}>{description}</Description>
+          <Button>{button}</Button>
+        </ScrollAnimation>
       </div>
       <div className={styles.image}>
-        <img src={cardDetail} alt='card-detail' />
+        <ScrollAnimation animateIn='zoomIn' duration={1} animateOnce={true}>
+          <img className={styles.card_img} src={cardDetail} alt='card-detail' />
+        </ScrollAnimation>
       </div>
     </section>
   );

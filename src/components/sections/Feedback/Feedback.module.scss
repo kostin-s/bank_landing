@@ -2,6 +2,11 @@
   @apply relative flex justify-center flex-col sm:flex-row 
     sm:mb-[40px] mb-[5px];
 
+  .content {
+    @apply sm:mb-0 mb-7
+      sm:mr-[30px] mr-0 last:mr-0;
+  }
+
   .gradient_blue {
     @apply absolute z-[0] w-[60%] h-[60%] -right-[50%] 
       rounded-full blue__gradient bottom-40;

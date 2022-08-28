@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Description from '@/components/ui/Description/Description';
 import Title from '@/components/ui/Title/Title';
@@ -11,8 +12,15 @@ const Testimonials: FC = () => {
 
   return (
     <section className={styles.testimonials} id={'about'}>
-      <Title style={styles.title_width}>{title}</Title>
-      <Description style={styles.descr_width}>{description}</Description>
+      <ScrollAnimation
+        className={styles.wrapper}
+        animateIn='fadeIn'
+        duration={1}
+        animateOnce={true}
+      >
+        <Title style={styles.title_width}>{title}</Title>
+        <Description style={styles.descr_width}>{description}</Description>
+      </ScrollAnimation>
     </section>
   );
 };

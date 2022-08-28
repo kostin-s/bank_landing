@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { Dispatch, FC, SetStateAction } from 'react';
+import { Dispatch, FC, SetStateAction, useState } from 'react';
 
 import { ILinks, INavbar } from '../navbar.interface';
 
@@ -14,12 +14,24 @@ interface IMenuItemProps {
 const MenuItem: FC<IMenuItemProps> = props => {
   const { link, activeItem, setActive } = props;
 
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  const handleClick = () => {
+    setActive(link.id);
+    setIsDisabled(true);
+
+    setTimeout(() => {
+      setIsDisabled(false);
+    }, 500);
+  };
+
   return (
     <li
       className={cn(styles.link, {
         [styles.active]: activeItem === link.id,
+        [styles.disabled]: isDisabled,
       })}
-      onClick={() => setActive(link.id)}
+      onClick={handleClick}
     >
       <a href={`#${link.id}`}>{link.title}</a>
     </li>

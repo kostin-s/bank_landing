@@ -4,7 +4,8 @@
 
   .image {
     @apply relative max-w-[520px] flex-1 flex-center md:ml-10 ml-0 md:mt-0 mt-10;
-    > img {
+
+    .card_img {
       @apply w-[100%] h-[100%] 
         px-5 sm:p-0
         pointer-events-none select-none;
