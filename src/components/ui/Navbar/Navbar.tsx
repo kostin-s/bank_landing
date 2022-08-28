@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { FC, useState } from 'react';
 
 import MenuItem from '@/components/ui/Navbar/MenuItem/MenuItem';
@@ -11,16 +12,33 @@ import { ILinks } from './navbar.interface';
 
 const Navbar: FC = () => {
   const [active, setActive] = useState<ILinks>('home');
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  const handleClick = () => {
+    setIsDisabled(true);
+
+    setTimeout(() => {
+      setIsDisabled(false);
+    }, 500);
+  };
 
   return (
     <div className={styles.wrapper}>
       <nav className={styles.nav}>
-        <div className={styles.logo}>
-          <img src={logo} alt='bank' draggable='false' />
-          <h2>
-            <span>Ba</span>nk
-          </h2>
-        </div>
+        <a
+          href='#home'
+          className={cn(styles.link, {
+            [styles.disabled]: isDisabled,
+          })}
+          onClick={handleClick}
+        >
+          <div className={styles.logo}>
+            <img src={logo} alt='bank' draggable='false' />
+            <h2>
+              <span>Ba</span>nk
+            </h2>
+          </div>
+        </a>
 
         <ul className={styles.pc_menu}>
           {menuLinks.map(link => (

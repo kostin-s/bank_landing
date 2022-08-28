@@ -8,6 +8,10 @@
 .nav {
   @apply top-0 max-w-[1170px] py-6 flex justify-between items-center mx-auto;
 
+  a.disabled {
+    @apply pointer-events-none select-none;
+  }
+
   .logo {
     @apply flex items-center select-none cursor-pointer;
 
