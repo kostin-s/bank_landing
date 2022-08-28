@@ -1,0 +1,13 @@
+.footer {
+  @apply w-full flex-center
+    border-t border-solid border-white border-opacity-30 
+    py-[30px] px-4;
+
+  .content {
+    @apply flex flex-center;
+
+    > img {
+      @apply w-[16px] h-[16px] mr-4;
+    }
+  }
+}

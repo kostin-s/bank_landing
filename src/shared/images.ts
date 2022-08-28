@@ -4,6 +4,7 @@ import billing from '@/assets/billing.png';
 import cardDetail from '@/assets/cardDetail.png';
 import cards from '@/assets/cards.png';
 import close from '@/assets/close.svg';
+import copyright from '@/assets/copyright.svg';
 import discount from '@/assets/discount.svg';
 import googlePlayIcon from '@/assets/googlePlay.svg';
 import logo from '@/assets/logo.svg';
@@ -34,4 +35,5 @@ export {
   people1,
   people2,
   people3,
+  copyright,
 };
