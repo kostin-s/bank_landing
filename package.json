@@ -1,15 +1,19 @@
 {
   "name": "bank_landing",
   "private": true,
+  "homepage": "https://kostin-s.github.io/bank_landing/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "classnames": "^2.3.1",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.2.0",
